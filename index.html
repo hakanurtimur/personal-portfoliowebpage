@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello My Name is <span><strong>Hakan</strong></span></h1>
+               
+                <a href="#" type="button" class="cta">Portfolio</a>
+            </div>    
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    
+    <!-- skills section -->
+    <section id="skills">
+        <div class="skills container">
+            <div class="skills-top">
+                <h1 class="section-title">Ski<span>ll</span>s</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis porttitor lobortis. Phasellus semper facilisis arcu a mattis. Fusce imperdiet quis erat vel volutpat. Vivamus accumsan sodales eros quis tempus. Suspendisse vitae ultricies nunc, sed lobortis tortor. Mauris facilisis interdum dapibus. Praesent eget efficitur quam.</p>
+        
+            </div>
+
+            <div class="skills-end">
+                <div class="skills-item">
+                    <div class="icon"><img src="https://img.icons8.com/ios-glyphs/100/null/html-5.png"/></div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+                <div class="skills-item">
+                    <div class="icon"><img src="https://img.icons8.com/ios-glyphs/100/null/css3.png"/></div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>    
+                <div class="skills-item">
+                        <div class="icon"><img src="https://img.icons8.com/ios-glyphs/100/000000/javascript.png"/></div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                </div>
+                <div class="skills-item">
+                        <div class="icon"><img src="https://img.icons8.com/ios-glyphs/100/null/swift.png"/></div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section End -->
+    <!-- projects -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Coding is love!</h1>
+                        <h2>Project</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Coding is love!</h1>
+                        <h2>Project</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Coding is love!</h1>
+                        <h2>Project</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Coding is love!</h1>
+                        <h2>Project</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+                <div class="projects-item">
+                    <div class="project-info">
+                        <h1>Coding is love!</h1>
+                        <h2>Project</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects end -->
+    <!-- about me section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="pxArt (1).png" alt="Hakan Urtimur">
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="about info">
+                    <h1 class="section-title">About <span>Me</span></h1>
+                    <h2>Front End Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about me section end -->
+    <!-- play with me section -->
+    <section id="rpc">
+        <div class="rpc container">
+            <div class="rpc-header"><h1 class="section-title"><span>R</span>ock <span>P</span>aper <span>S</span>cissors</h1></div>
+            <div class="buttons">
+                <div class="buttons-item">
+                    <button class="option">Rock</button>
+                    <img src="https://img.icons8.com/color/96/null/hand-rock.png"/>
+                </div>
+                <div class="buttons-item">
+                    <button class="option">Paper</button>
+                    <img src="https://img.icons8.com/color/96/null/hand.png"/>
+                </div>
+                <div class="buttons-item">
+                    <button class="option">Scissors</button>
+                    <img src="https://img.icons8.com/color/96/null/hand-scissors--v1.png"/>
+                </div>
+                
+            </div>
+            <script>
+                const options = document.querySelectorAll(".option");
+                options.forEach((element) => {
+                    element.addEventListener("click", function () {
+                        const pInput = this.textContent;
+
+                        const cOptions = ["Rock", "Paper", "Scissors"];
+                        const cInput = cOptions[Math.floor(Math.random()*3)];
+
+                        const compareInputs = (pInput, cInput) => {
+                            const currentMatch = `${pInput} vs ${cInput}`;
+                            if(pInput === cInput) {
+                                alert(`${currentMatch} is tie!`)
+                            } else {
+                            // Rock
+                            if(cInput === "Rock") {
+                                if(pInput === "Paper"){
+                                    alert(`${currentMatch} you win!`)
+                                }else{
+                                    alert(`${currentMatch} i got you!`)
+                                }
+                            }
+                            //Paper
+                            if(cInput === "Paper") {
+                                if(pInput === "Scissors"){
+                                    alert(`${currentMatch} you win!`)
+                                }else{
+                                    alert(`${currentMatch} i got you!`)
+                                }
+                            }
+                            
+                            //Scissors
+                            if(cInput === "Scissors") {
+                                if(pInput === "Rock"){
+                                    alert(`${currentMatch} you win!`)
+                                }else{
+                                    alert(`${currentMatch} i got you!`)
+                                }
+                            }
+                            }
+                        }
+                        compareInputs(pInput, cInput);
+                    }
+                    )
+                })
+
+            </script>
+        </div>
+    </section>
+
+    <!-- play with me section end-->
+    <!-- contact section  -->
+    <section id="contact">
+        <div class="contact container">
+            <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="https://img.icons8.com/external-rabit-jes-detailed-outline-rabit-jes/62/null/external-placeholder-navigation-and-maps-rabit-jes-detailed-outline-rabit-jes-2.png"/></div>
+                    <div class="contact-info">
+                        <h2>Adress</h2>
+                        <p>Kepez/ANTALYA</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="https://img.icons8.com/ios/50/null/phone.png"/></div>
+                    <div class="contact-info">
+                        <h2>Phone</h2>
+                        <p>05538061332</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="https://img.icons8.com/ios/50/null/apple-mail.png"/></div>
+                    <div class="contact-info">
+                        <h2>E-mail</h2>
+                        <p>dythakanurtimur@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section  end -->
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer container">
+            <h1 class="section-title"><span>H</span>akan <span>U</span>rtimur</h1>
+            <div class="social-items">
+                
+                    <div class="social-icon"><img src="https://img.icons8.com/ios-glyphs/50/null/linkedin-circled--v1.png"/></div>
+                    <div class="social-icon"><img src="https://img.icons8.com/ios-glyphs/50/null/github.png"/></div>
+                    <div class="social-icon"><img src="https://img.icons8.com/ios-glyphs/50/null/twitter-circled--v1.png"/></div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+    
+</body>
+</html>

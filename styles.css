@@ -1,0 +1,400 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* hero section */
+#hero {
+    background-color: #f1d7d6;
+    position: relative;
+    z-index: 1;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+#hero .hero {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    justify-content: flex-start;
+}
+#hero h1 {
+    width: fit-content;
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    color: #1b1b1d;
+    overflow: hidden;
+    border-right: .15em solid #a7191a; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    animation: typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
+}
+
+#hero h1 span{
+    color: #a7191a;
+}
+
+
+
+#hero .cta {
+    font-size: 2rem;
+    color: #a7191a;
+    border: 2px solid #a7191a;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    transition: 0.3s ease-in 20ms;
+    transition-property: all;
+    text-transform: uppercase;
+
+}
+#hero .cta:hover {
+    background-color: #a7191a;
+    color: white;
+}
+/* hero section end*/
+/* skills section */
+#skills .skills{
+    text-align: center;
+    max-width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+.section-title{ 
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #1b1b1d;
+}
+.section-title span{
+    color: #a7191a;
+    
+}
+.skills-top p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    width: 80% auto;
+    margin: 50px;
+}
+.skilss-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-basis: 50%;
+}
+.skills-item {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    Background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqYidWIp5U57Gp1_roFzZuF36IdBQ-TNzyA&usqp=CAU);
+    background-size: 100% 100%;
+    margin: 10px 5px;
+    min-height: 500px;
+    max-width: 500px;
+    color: white;
+    overflow: hidden;
+
+}
+.skills p {
+    font-size: 1.5rem;
+}
+.skills .icon {
+    align-content: left;
+    padding: 100px;
+}
+
+/* skills section end */
+
+/* procjects section */
+#projects .projects {
+    flex-direction: column;
+    display: flex;
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1{
+    margin: 50px;
+
+}
+#projects .all-projects {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#projects .projects-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Vgqlx9RfTR7dF_b8nFEBgn0zcH28UeVoSQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 500px;
+    min-width: 500px;
+    transition: 0.5s ease 0.01s;
+    
+
+
+}
+#projects .project-info {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    width: 100%;
+    max-height: 200px;
+    background: linear-gradient(180deg, rgba(27, 27, 29, 1) 25%, rgba(27, 27, 29, 0.95) 25%, rgba(27, 27, 29, 0.9) 25%,
+    rgba(27, 27, 29, 0.85) 10%,
+     transparent)
+    
+}
+h2 {
+    font-size: 2rem;
+}
+#projects .projects-item p {
+    font-size: 1.5rem;
+}
+#projects .projects-item h1 {
+    font-size: 4rem;
+}
+#projects .projects-item:hover {
+    transform: scale(1.05);
+}
+/* procjects section end */
+/* about section */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    
+
+}
+#about .col-left{
+    width: 250px;
+    height: 320px;
+}
+#about .col-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 10px solid white;
+}
+#about .col-left .about-img {
+    position: relative;
+    
+}
+#about .col-left .about-img::after {
+    border: 7px solid #a7191a;
+    content: "";
+    left: -33px;
+    top: 25px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+}
+    
+#about h2 {
+    margin-bottom: 3rem;
+}
+
+
+/* about section end */
+/* rpc seciton */
+#rpc .rpc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rpc .buttons {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+.buttons .buttons-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+.buttons-item button {
+    width: 90%;
+    height: 90%;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #a7191a;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    transition: 0.5s ease 0.1s;
+}
+.buttons-item img {
+    padding-top: 20px;
+
+}
+.buttons-item button:hover {
+    transform: scale(1.02);
+    border: 10px solid #1b1b1d;
+    opacity: 0.8;
+}
+/* rpc seciton end*/
+/* contact section */
+#contact {
+    padding-bottom: 200px;
+}
+#contact .contact{
+
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#contact .contact-items {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+#contact .contact-item {
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(27, 27, 27, 0.8);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease 200ms;
+}
+.contact-icon {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.contact-info h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.contact-item:hover {
+    box-shadow: 0px 0px 5px 0px rgba(27, 27, 27, 0.8);
+    transform: scale(1.1);
+
+}
+/* contact section end */
+/* footer */
+#footer {
+    background: #f1d7d6;
+    object-fit: contain;
+}
+.footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 300px;    
+    
+}
+
+.social-items {
+    display: flex;
+}
+.social-icon {
+    padding: 30px;
+
+}
+.social-icon img {
+    transition: 0.2s ease 0.02;
+}
+.social-icon img:hover {
+    border: 2px solid #a7191a;
+    border-radius: 50%;
+}
+
+
+
+
+/* footer end */
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  };
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #a7191a; }
+  };
+  /* media-quary TABLET*/
+@media only screen and (min-width: 768px) {
+    .cta {
+        font-size: 1rem;
+        padding: 60px 30px;
+    }
+
+}
+  
+  /* media-quary */
